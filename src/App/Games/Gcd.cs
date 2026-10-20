@@ -3,13 +3,15 @@ namespace App.Games;
 public static class Gcd
 {
     private const string Description = "Find the greatest common divisor of given numbers.";
+    private const int MinNumber = 1;
+    private const int MaxNumber = 100;
 
     public static void Run() => Engine.Run(Description, GenerateRound);
 
     private static (string, string) GenerateRound()
     {
-        var a = Random.Shared.Next(1, 101);
-        var b = Random.Shared.Next(1, 101);
+        var a = Random.Shared.Next(MinNumber, MaxNumber + 1);
+        var b = Random.Shared.Next(MinNumber, MaxNumber + 1);
         return ($"{a} {b}", FindGcd(a, b).ToString());
     }
 
