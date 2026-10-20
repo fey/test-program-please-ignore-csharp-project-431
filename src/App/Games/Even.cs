@@ -2,8 +2,7 @@ namespace App.Games;
 
 public static class Even
 {
-    private const string Description =
-        "Answer \"yes\" if the number is even, otherwise answer \"no\".";
+    private const string Description = "Answer 'yes' if the number is even, otherwise answer 'no'.";
     private const int MinNumber = 1;
     private const int MaxNumber = 100;
 
