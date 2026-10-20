@@ -5,6 +5,7 @@ Console.WriteLine("Please enter the game number and press Enter.");
 Console.WriteLine("1 - Greet");
 Console.WriteLine("2 - Even");
 Console.WriteLine("3 - Calc");
+Console.WriteLine("4 - GCD");
 Console.WriteLine("0 - Exit");
 Console.Write("Your choice: ");
 var choice = Console.ReadLine();
@@ -20,5 +21,8 @@ switch (choice)
         break;
     case "3":
         Calc.Run();
+        break;
+    case "4":
+        Gcd.Run();
         break;
 }
